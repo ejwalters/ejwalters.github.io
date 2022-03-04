@@ -1,20 +1,20 @@
 function send(method) {
   switch (method) {
     case "page":
-      analytics.page("Sample Page Event");
+      analytics.page("Product Viewed");
       break;
     case "track":
-      analytics.track("Sample Track Event", {
+      analytics.track("Added to Cart", {
         sampleProperty: true
       });
       break;
     case "identify":
-      analytics.identify("sampleUserId", {
+      analytics.identify("ejwalters", {
         sampleTrait: true
       });
       break;
     case "group":
-      analytics.group("sampleGroupId", {
+      analytics.group("Platinum", {
         sampleGroupTrait: true
       });
       break;
